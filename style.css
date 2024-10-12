@@ -30,14 +30,12 @@ html { box-sizing: border-box; }
 
 
 body {
-	margin: 0 auto;
 	font-family: "Lora", serif;
   	font-optical-sizing: auto;
-	max-width: 1100px;
 	font-size: 18px;
 	line-height: 1.5;
 	color: #242424;
-	
+	margin: 0 auto;
 }
 
 h1, 
@@ -50,11 +48,15 @@ h3 {
 
 h1 {
 	font-size: 52px;
+	max-width: 60%;
+	margin: 0;
 }
 
 h2 {
 	font-size: 36px;
 	color: #3e606b;
+	padding: 0;
+	margin: 0;
 }
 
 h3 {
@@ -70,14 +72,139 @@ footer {
 	text-align: center;
 }
 
-.sekce {
+img {
+	border-radius: 5px;
+}
+
+header, 
+footer,
+section {
+    width: 100%;
+}
+
+section {
 	padding: 80px 0;
 }
 
-.nabidka {
-	background-color: #f0f0f0;
+/* Header*/
+.zahlavi {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
-img {
-	border-radius: 5px;
+.logo {
+	width: 170px;
+	padding: 30px 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+ul {
+	display: flex;
+}
+
+li a {
+	font-family: "Playfair Display", serif;
+  	font-optical-sizing: auto;
+	font-weight: bold;
+	display: block;
+	padding: 10px 15px;
+	text-decoration: none;
+	align-items: start;
+	color: #242424;
+}
+
+.menu {
+	margin: 0;
+	padding: 0;
+}
+
+a:hover {
+	background-color: #f195b2;
+	color: white;
+	border-radius: 20px;
+}
+
+
+/* hero sekce*/
+.heroSekce {
+	background-image: url(images/cupcake.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.hero {
+	flex-direction: column;
+	color: white;
+	margin: 0 auto;
+	max-width: 1100px;
+}
+
+.textHero {
+	font-size: 24px;
+	font-style: italic;
+	width: 60%;
+}
+
+/*Vítejte */
+.vitejteVlevo {
+	margin-right: 30px;
+}
+
+.button:hover{
+	background-color: #d2567d;
+	color: white;
+	border-radius: 30px;
+}
+
+.button {
+	background-color: #f195b2;
+	color: white;
+	border-radius: 30px;
+	padding: 15px 40px;
+	text-decoration: none;
+}
+
+/* Dnešní nabídka*/
+.dnesniNabidka {
+    background-color: #f0f0f0;
+}
+
+.produkty {
+    display: flex;
+    border: black 1px solid;
+}
+
+.produkt {
+    flex: 1 1 200px; 
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 30px;
+    box-sizing: border-box; 
+}
+
+.kontejner {
+	display: flex;
+	margin: 0 auto;
+	max-width: 1100px;
+}
+
+/*Náš přístup k pečení */
+.pristupVlevo {
+	flex-basis: 50%;
+}
+
+.pristupVpravo {
+	flex-basis: 50%;
+	flex-grow: 0;
+	margin-left: 30px;
+}
+
+.pristup {
+	align-items: center;
 }
