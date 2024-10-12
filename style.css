@@ -30,6 +30,54 @@ html { box-sizing: border-box; }
 
 
 body {
-	margin: 0;
+	margin: 0 auto;
+	font-family: "Lora", serif;
+  	font-optical-sizing: auto;
+	max-width: 1100px;
+	font-size: 18px;
+	line-height: 1.5;
+	color: #242424;
+	
 }
 
+h1, 
+h2,
+h3 {
+	font-family: "Playfair Display", serif;
+  	font-optical-sizing: auto;
+	line-height: 1.25;
+}
+
+h1 {
+	font-size: 52px;
+}
+
+h2 {
+	font-size: 36px;
+	color: #3e606b;
+}
+
+h3 {
+	font-size: 18px;
+	color: #3e606b;
+}
+
+footer {
+	background-color: #303339;
+	padding: 30px 0;
+	margin: 0;
+	color: white;
+	text-align: center;
+}
+
+.sekce {
+	padding: 80px 0;
+}
+
+.nabidka {
+	background-color: #f0f0f0;
+}
+
+img {
+	border-radius: 5px;
+}
