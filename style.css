@@ -44,6 +44,7 @@ h3 {
 	font-family: "Playfair Display", serif;
   	font-optical-sizing: auto;
 	line-height: 1.25;
+	font-weight: bold;
 }
 
 h1 {
@@ -66,10 +67,14 @@ h3 {
 
 footer {
 	background-color: #303339;
-	padding: 30px 0;
 	margin: 0;
 	color: white;
 	text-align: center;
+}
+
+footer p {
+	padding: 30px 0;
+	margin: 0;
 }
 
 img {
@@ -84,6 +89,12 @@ section {
 
 section {
 	padding: 80px 0;
+}
+
+.kontejner {
+	display: flex;
+	margin: 0 auto;
+	max-width: 1100px;
 }
 
 /* Header*/
@@ -160,38 +171,17 @@ a:hover {
 }
 
 .button {
+	display: inline-block;
 	background-color: #f195b2;
 	color: white;
 	border-radius: 30px;
 	padding: 15px 40px;
 	text-decoration: none;
+	margin-top: 20px;
 }
 
-/* Dnešní nabídka*/
-.dnesniNabidka {
-    background-color: #f0f0f0;
-}
-
-.produkty {
-    display: flex;
-    border: black 1px solid;
-}
-
-.produkt {
-    flex: 1 1 200px; 
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: white;
-    border-radius: 5px;
-    padding: 20px;
-    margin: 30px;
-    box-sizing: border-box; 
-}
-
-.kontejner {
-	display: flex;
-	margin: 0 auto;
-	max-width: 1100px;
+.vitejte {
+	align-items: center;
 }
 
 /*Náš přístup k pečení */
@@ -207,4 +197,48 @@ a:hover {
 
 .pristup {
 	align-items: center;
+}
+
+/* Dnešní nabídka*/
+.dnesniNabidka {
+    background-color: #f0f0f0;
+}
+
+.produkty {
+    display: flex;
+	justify-content: space-between; 
+    flex-wrap: nowrap; 
+}
+
+.produkt {
+	flex-basis: 23%;
+    background-color: white;
+    border-radius: 5px;
+    margin-right: 30px;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.buchta {
+	margin: 0;
+}
+
+.produkt img {
+    max-width: 100%; 
+    height: auto;
+}
+
+.produkt p {
+	padding: 20px;
+	margin: 0;
+}
+
+.produkt h3 {
+	padding: 20px 20px 0 20px;
+	margin: 0;
+}
+
+.produktyNadpis {
+	margin: 0 auto;
+	max-width: 1100px;
 }
