@@ -65,18 +65,6 @@ h3 {
 	color: #3e606b;
 }
 
-footer {
-	background-color: #303339;
-	margin: 0;
-	color: white;
-	text-align: center;
-}
-
-footer p {
-	padding: 30px 0;
-	margin: 0;
-}
-
 img {
 	border-radius: 5px;
 }
@@ -115,6 +103,7 @@ li {
 
 ul {
 	display: flex;
+	margin: 0;
 }
 
 li a {
@@ -130,7 +119,6 @@ li a {
 
 .menu {
 	margin: 0;
-	padding: 0;
 }
 
 a:hover {
@@ -164,10 +152,8 @@ a:hover {
 	margin-right: 30px;
 }
 
-.button:hover{
-	background-color: #d2567d;
-	color: white;
-	border-radius: 30px;
+.vitejte {
+	align-items: center;
 }
 
 .button {
@@ -179,9 +165,10 @@ a:hover {
 	text-decoration: none;
 	margin-top: 20px;
 }
-
-.vitejte {
-	align-items: center;
+.button:hover{
+	background-color: #d2567d;
+	color: white;
+	border-radius: 30px;
 }
 
 /*Náš přístup k pečení */
@@ -241,4 +228,17 @@ a:hover {
 .produktyNadpis {
 	margin: 0 auto;
 	max-width: 1100px;
+}
+
+/* patička*/
+footer {
+	background-color: #303339;
+	margin: 0;
+}
+
+footer p {
+	padding: 30px 0;
+	margin: 0;
+	color: white;
+	text-align: center;
 }
